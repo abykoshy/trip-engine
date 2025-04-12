@@ -18,8 +18,8 @@ public class TripCalculator {
     public static void main(String[] args) throws IOException,
             TripEngineException {
         if (args.length < 2) {
-            System.out.println("Missing arguments : <source csv containing " +
-                    "taps> <outfile to store the trips>");
+            log.severe("Missing arguments : <source csv containing " +
+                    "taps>,<outfile to store the trips>");
         } else {
             TripEngine tripEngine = new TripEngine();
             tripEngine.processTaps(CsvUtils.readTapsFromCsv(args[0]));
