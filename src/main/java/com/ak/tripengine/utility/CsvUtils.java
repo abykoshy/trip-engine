@@ -39,7 +39,7 @@ public class CsvUtils {
              writer = new FileWriter(Path.of(fileName).toString());
 
             StatefulBeanToCsv<Trip> sbc =
-                    new StatefulBeanToCsvBuilder<Trip>(writer).withQuotechar('\'')
+                    new StatefulBeanToCsvBuilder<Trip>(writer).withQuotechar('\"')
                             .withSeparator(CSVWriter.DEFAULT_SEPARATOR)
                             .build();
             writer.write(Trip.header);
