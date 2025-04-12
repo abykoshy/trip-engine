@@ -28,7 +28,7 @@ class TestCsvUtils {
                 "Stop1", "Stop2", 5.00f, "CompanyA", "Bus1", "1234567890", Status.COMPLETED));
 
 
-        Path file = Path.of("src/test/resources/trips_out.csv");
+        Path file = Path.of("target/trips_out_test.csv");
         CsvUtils.writeTripsToCsv(trips, file.toString());
 
         assertThat(file).exists();
