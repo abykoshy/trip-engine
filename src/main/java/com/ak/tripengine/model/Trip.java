@@ -24,7 +24,7 @@ import java.util.Date;
 @NoArgsConstructor
 public class Trip {
 
-    public static String header = "Started, Finished, DurationSecs, FromStopId, ToStopId, ChargeAmount, CompanyId, BusID, PAN, Status";
+    public static String header = "\"Started\",\"Finished\",\"DurationSecs\",\"FromStopId\",\"ToStopId\",\"ChargeAmount\",\"CompanyId\",\"BusID\",\"PAN\",\"Status\"";
 
     @CsvBindByPosition(position = 0)
     @CsvDate("dd-MM-yyyy HH:mm:ss")
